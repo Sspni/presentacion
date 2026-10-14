@@ -4,131 +4,428 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F1E9DB">
-  <meta name="description" content="Presentación de COOL ANIMAL para la feria empresarial: paletas frías de fruta y yogur para perros.">
-  <title>COOL ANIMAL · Feria empresarial</title>
+  <meta name="description" content="Paletas frutales congeladas para compartir momentos frescos con tu perro. Fresa y banano por $3.500 COP.">
+  <title>COOL ANIMAL. Refresca, consiente, comparte</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="../config.js" defer></script>
+  <link rel="stylesheet" href="professional.css">
+  <script src="config.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#deck">Saltar a la presentación</a>
-  <main class="deck" id="deck" aria-label="Presentación COOL ANIMAL" aria-roledescription="presentación">
-    <svg class="svg-library" aria-hidden="true" focusable="false"><symbol id="paw-print" viewBox="0 0 48 48"><path d="M9.7 19.4c-2.2 1.1-4.9-1.7-4.9-5.1s2.4-5.5 4.8-3.7 3 7.2.1 8.8Zm8.3-3.7c-2.4.4-4.6-2.8-4.1-6.4s3.4-4.8 5.2-1.9 1 7.7-1.1 8.3Zm10.5 0c-2.3-.6-3-5.3-1.2-8.3s4.7-1.6 5.2 1.9-1.7 6.8-4 6.4Zm8.1 3.7c-2.9-1.6-2.3-7 .1-8.8s4.8.3 4.8 3.7-2.7 6.2-4.9 5.1ZM24 21.3c-6.9 0-13.2 4.9-13.2 10.5 0 4.3 4 6.8 8 5.8 2.2-.5 3.6-1 5.2-1s3 .5 5.2 1c4 1 8-1.5 8-5.8 0-5.6-6.3-10.5-13.2-10.5Z"/></symbol></svg>
-    <div class="ambient-field" aria-hidden="true">
-      <span class="ambient-shape ambient-shape-one"></span><span class="ambient-shape ambient-shape-two"></span>
-      <div class="brand-pattern">
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
-        <span class="pattern-item pattern-logo"><img src="../assets/cool-animal-mark.png" alt=""></span><span class="pattern-item pattern-paw"><svg viewBox="0 0 48 48"><use href="#paw-print"></use></svg></span>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Cool Animal, inicio">
+      <img class="brand-lockup" src="assets/cool-animal-mark.png" alt="Símbolo de cabeza de perro de COOL ANIMAL">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#productos">Sabores</a>
+      <a href="#ingredientes">Ingredientes</a>
+      <a href="#destaca">Lo especial</a>
+      <a href="#comparativa">Comparativa</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#pedidos">Pedir</a>
+    </nav>
+    <button class="cart-trigger" data-open-cart aria-label="Abrir carrito, 0 productos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 1.9-1.4L21 9H7"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+      <span>Carrito</span>
+      <b class="cart-count" data-cart-count>0</b>
+    </button>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <h1>Refresca.<br><em>Consiente.</em><br>Comparte.</h1>
+        <p class="hero-text">Paletas congeladas de fruta real y yogur natural en forma de patita, hechas para refrescar y consentir a tu perro.</p>
+        <div class="hero-actions">
+          <a href="#productos" class="button button-dark hero-cta">Comprar ahora</a>
+          <a href="#ingredientes" class="text-link hero-secondary">Ver ingredientes</a>
+        </div>
       </div>
-    </div>
-    <section class="welcome-screen" data-welcome aria-labelledby="welcome-title">
-      <div class="welcome-card">
-        <div class="welcome-emblem"><img class="welcome-logo" src="../assets/cool-animal-mark.png" alt="Logo de COOL ANIMAL"></div>
-        <p class="welcome-kicker">PRESENTACIÓN · FERIA EMPRESARIAL</p>
-        <h1 id="welcome-title">COOL<br><em>ANIMAL.</em></h1>
-        <p class="welcome-caption">Proyecto de emprendimiento</p>
-        <button class="start-button" type="button" data-start aria-label="Iniciar presentación">
-          <span>Toca para iniciar</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+
+      <!-- 3D HERO STAGE -->
+      <div class="hero-visual" id="heroVisualStage">
+        <span class="hero-ambient-glow glow-gold" aria-hidden="true"></span>
+        <span class="hero-ambient-glow glow-orange" aria-hidden="true"></span>
+
+        <div class="hero-image hero-photo" id="heroPhoto">
+          <img src="assets/perrito-patita-referencia.png" alt="Perrito disfrutando una paleta con forma de patita">
+          <div class="photo-glare" aria-hidden="true"></div>
+          <span class="hero-stamp">MOMENTO<br>FRESCO</span>
+        </div>
+
+        <div class="hero-product" id="heroProduct">
+          <img src="assets/paleta-patita-referencia.png" alt="Paleta en forma de patita Cool Animal">
+          <div>
+            <small>COOL ANIMAL</small>
+            <strong>Paletas en forma de patita</strong>
+            <span class="hero-product-price">$3.500 COP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLEAN BRAND TICKER -->
+    <aside class="brand-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-content">
+          <span>Yogur natural</span><span class="ticker-bullet">·</span>
+          <span>Fresa silvestre</span><span class="ticker-bullet">·</span>
+          <span>Banano maduro</span><span class="ticker-bullet">·</span>
+          <span>Sin azúcar añadida</span><span class="ticker-bullet">·</span>
+          <span>Congelado a -18°C</span><span class="ticker-bullet">·</span>
+          <span>Hecho en Colombia</span><span class="ticker-bullet">·</span>
+        </div>
+        <div class="ticker-content" aria-hidden="true">
+          <span>Yogur natural</span><span class="ticker-bullet">·</span>
+          <span>Fresa silvestre</span><span class="ticker-bullet">·</span>
+          <span>Banano maduro</span><span class="ticker-bullet">·</span>
+          <span>Sin azúcar añadida</span><span class="ticker-bullet">·</span>
+          <span>Congelado a -18°C</span><span class="ticker-bullet">·</span>
+          <span>Hecho en Colombia</span><span class="ticker-bullet">·</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products section-wrap" id="productos">
+      <div class="section-heading products-heading">
+        <h2>Elige su <em>favorita.</em></h2>
+        <p>Fruta fresca seleccionada, yogur digestivo y textura fría en forma de patita.</p>
+      </div>
+      <div class="product-grid" data-products></div>
+    </section>
+
+    <!-- INGREDIENTS SECTION -->
+    <section class="nutrition section-wrap" id="ingredientes">
+      <div class="section-heading">
+        <h2>Ingredientes <em>simples.</em></h2>
+        <p>Una receta corta, honesta y nutritiva sin aditivos ni ingredientes innecesarios.</p>
+      </div>
+
+      <div class="nutrition-grid">
+        <div class="nutrition-card good-card">
+          <div class="card-tag tag-good">Ingredientes naturales</div>
+          <ul class="clean-list">
+            <li>
+              <div>
+                <strong>Fresa silvestre fresca</strong>
+                <p>Aporta sabor natural, antioxidantes y vitamina C.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Banano maduro</strong>
+                <p>Fuente de potasio y fibra soluble para una digestión suave.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Yogur natural sin lactosa</strong>
+                <p>Base cremosa con probióticos que protegen la flora estomacal.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Agua purificada</strong>
+                <p>Hidratación limpia para los días de calor o paseo.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nutrition-card zero-card">
+          <div class="card-tag tag-zero">Lo que no contiene</div>
+          <ul class="zero-list">
+            <li>
+              <div>
+                <strong>Sin azúcar añadida ni xilitol</strong>
+                <p>El xilitol es tóxico para perros. Nuestras paletas solo llevan el dulce propio de la fruta.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Sin conservantes químicos</strong>
+                <p>La congelación a -18°C es el único método de conservación.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Sin colorantes ni saborizantes</strong>
+                <p>El tono y el sabor provienen en su totalidad de fruta real.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Sin harinas ni gluten</strong>
+                <p>Libre de rellenos secos o subproductos industriales.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- "LO ESPECIAL" / FEATURES SECTION -->
+    <section class="stands-out section-wrap" id="destaca">
+      <div class="section-heading">
+        <h2>COOL ANIMAL <em>se nota.</em></h2>
+        <p class="stands-intro">Un premio frío, frutal y pensado para compartir.</p>
+      </div>
+      <div class="stands-points">
+        <article class="feature-card">
+          <div class="feature-glow" aria-hidden="true"></div>
+          <div class="feature-icon-wrap icon-strawberry">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 19c-2-8 3-13 12-14-1 8-5 13-12 14ZM23 20c-6-6-14-5-18 1-5 7-1 20 7 24 4 2 8 0 11 0s7 2 11 0c8-4 12-17 7-24-4-6-12-7-18-1Z"/></svg>
+          </div>
+          <h3>Fruta real</h3>
+          <p>Fresa y banano natural sin saborizantes artificiales.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-glow" aria-hidden="true"></div>
+          <div class="feature-icon-wrap icon-yogurt">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v38M7.5 14.5l33 19m-33 0 33-19M24 5l-5 5m5-5 5 5M24 43l-5-5m5 5 5-5"/></svg>
+          </div>
+          <h3>Yogur natural</h3>
+          <p>Base suave y digestible que cuida el estómago de tu perro.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-glow" aria-hidden="true"></div>
+          <div class="feature-icon-wrap icon-frost">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v38M7.5 14.5l33 19m-33 0 33-19M24 5l-5 5m5-5 5 5M24 43l-5-5m5 5 5-5M7.5 14.5l7 .5m-7-.5 2-6m28 25 2-6m-2 6-7 .5m-23-5.5 2 6m-2-6 7-.5m23-19-2-6m2 6-7-.5"/></svg>
+          </div>
+          <h3>Bien fría</h3>
+          <p>Consistencia congelada para prolongar el lamido y aliviar el calor.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPARISON SECTION -->
+    <section class="comparison section-wrap" id="comparativa">
+      <div class="section-heading">
+        <h2>¿Qué hace especial <em>a COOL ANIMAL?</em></h2>
+        <p class="comparison-intro">Comparamos nuestra receta con los premios convencionales del mercado.</p>
+      </div>
+      <div class="compare-glass">
+        <div class="compare-head">
+          <span>Característica</span>
+          <div class="compare-brand-col">
+            <strong>COOL ANIMAL</strong>
+          </div>
+          <span>Premios tradicionales</span>
+        </div>
+        <div class="compare-row">
+          <span class="row-label">Formato</span>
+          <div class="col-highlight"><strong>Paleta helada en patita</strong></div>
+          <span class="col-other">Galleta o stick seco</span>
+        </div>
+        <div class="compare-row">
+          <span class="row-label">Ingredientes principales</span>
+          <div class="col-highlight"><strong>Yogur natural y fruta</strong></div>
+          <span class="col-other">Harinas y subproductos</span>
+        </div>
+        <div class="compare-row">
+          <span class="row-label">Conservantes</span>
+          <div class="col-highlight"><strong>Sin químicos (en frío)</strong></div>
+          <span class="col-other">BHT y aditivos</span>
+        </div>
+        <div class="compare-row">
+          <span class="row-label">Consumo</span>
+          <div class="col-highlight"><strong>Lamido relajante</strong></div>
+          <span class="col-other">Se traga en segundos</span>
+        </div>
+        <div class="compare-row">
+          <span class="row-label">Precio</span>
+          <div class="col-highlight"><strong>$3.500 COP por unidad</strong></div>
+          <span class="col-other">Variable según marca</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq section-wrap" id="preguntas">
+      <div class="section-heading">
+        <h2>Preguntas <em>frecuentes.</em></h2>
+        <p>Detalles sobre conservación, ingredientes y entrega de tus pedidos.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item is-open">
+          <button class="faq-question" aria-expanded="true">
+            <span>¿A partir de qué edad puede consumirlas mi perro?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Son aptas desde los 3 meses de edad (cuando ya comen alimento sólido) hasta la vejez. Su textura cremosa es suave y ayuda a calmar las encías en cachorros con dentición.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo se conservan y cuánto tiempo duran?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Deben guardarse en el congelador a -18°C. Mantienen su textura y propiedades hasta por 3 meses.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo llegan congeladas a mi casa?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Se despachan en empaque térmico protector con refrigerante para conservar la temperatura durante el trayecto.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Tienen lactosa o azúcar?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>No. El yogur utilizado es sin lactosa y no contiene azúcar añadida, sal, xilitol ni colorantes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER ROADMAP SECTION -->
+    <section class="order section-wrap" id="pedidos">
+      <div class="order-top">
+        <h2>¿Se te <em>antojó?</em></h2>
+        <p>Elige tus sabores, completa tus datos y te las enviamos congeladas a tu puerta.</p>
+      </div>
+      <div class="order-bottom">
+        <div class="steps">
+          <div class="step-card">
+            <b class="step-num">01</b>
+            <div class="step-info">
+              <strong>Elige sabores</strong>
+              <span>Individual o packs</span>
+            </div>
+          </div>
+          <div class="step-card">
+            <b class="step-num">02</b>
+            <div class="step-info">
+              <strong>Datos de entrega</strong>
+              <span>Dirección y pago</span>
+            </div>
+          </div>
+          <div class="step-card">
+            <b class="step-num">03</b>
+            <div class="step-info">
+              <strong>Confirmación</strong>
+              <span>Despacho por WhatsApp</span>
+            </div>
+          </div>
+        </div>
+        <button class="button button-cream order-main-btn" data-open-cart>
+          <span>Armar mi pedido</span>
         </button>
       </div>
+      <span class="order-orb orb-a" aria-hidden="true"></span>
+      <span class="order-orb orb-b" aria-hidden="true"></span>
     </section>
-    <div class="deck-top">
-      <a class="mini-brand" href="#slide-1"><img src="../assets/cool-animal-mark.png" alt=""><span>COOL ANIMAL</span></a>
-      <span class="top-note">PRESENTACIÓN DE FERIA</span>
-    </div>
-
-    <section class="slide cover is-active" id="slide-1" aria-labelledby="title-1" aria-roledescription="diapositiva" data-slide="1">
-      <div class="cover-copy">
-        <p class="eyebrow"><span class="eyebrow-mark"></span> Proyecto de emprendimiento</p>
-        <h1 id="title-1">Una pausa<br>fresca para<br><em>compartir.</em></h1>
-        <p class="cover-intro">Paletas de fruta y yogur pensadas para consentir a los perros.</p>
-        <div class="cover-meta"><span>Nicolás Valencia</span><span>Yojhan Cubillos</span><span>Grado 11 · Gimnasio Cervantes</span><span>Facatativá</span></div>
-      </div>
-      <div class="cover-art" aria-label="Emblema y huella de COOL ANIMAL">
-        <div class="cover-orbit orbit-one"></div><div class="cover-orbit orbit-two"></div>
-        <img class="cover-brand" src="../assets/cool-animal-mark.png" alt="Emblema de COOL ANIMAL">
-        <svg class="cover-paw" viewBox="0 0 48 48" aria-hidden="true"><use href="#paw-print"></use></svg>
-
-        <span class="art-caption">Animal fresco, animal feliz.</span>
-      </div>
-    </section>
-
-    <section class="slide" id="slide-2" aria-labelledby="title-2" aria-roledescription="diapositiva" data-slide="2" aria-hidden="true" inert>
-      <header class="slide-heading"><p class="eyebrow">01 / El porqué</p><h2 id="title-2">Una idea que nace<br>del <em>cuidado.</em></h2></header>
-      <div class="why-layout">
-        <p class="lead-copy">En los días cálidos, las familias buscan formas sencillas de compartir algo especial con sus perros.</p>
-        <div class="why-points"><article><span>01</span><h3>Bienestar cotidiano</h3><p>Un snack frío para ofrecer como premio ocasional, con ingredientes de la receta identificados.</p></article><article><span>02</span><h3>Compra cercana</h3><p>Una propuesta fácil de conocer, probar y pedir en la feria o por canales digitales.</p></article><article><span>03</span><h3>Emprendimiento local</h3><p>Una marca pequeña que puede aprender del público y trabajar con proveedores del entorno.</p></article></div>
-        <p class="fine-note">La fórmula y las porciones deben validarse con orientación veterinaria antes de hacer afirmaciones nutricionales.</p>
-      </div>
-    </section>
-
-    <section class="slide identity-slide" id="slide-3" aria-labelledby="title-3" aria-roledescription="diapositiva" data-slide="3" aria-hidden="true" inert>
-      <div class="identity-left"><p class="eyebrow">02 / La propuesta</p><h2 id="title-3">COOL<br><em>ANIMAL.</em></h2><p class="identity-desc">Paletas congeladas de fruta y yogur para perros, en sabores fresa y banano.</p></div>
-      <div class="identity-right"><img class="brand-logo" src="../assets/cool-animal-logo.png" alt="Logotipo de COOL ANIMAL"><div class="identity-swatches" aria-label="Colores corporativos principales"><span style="--swatch:#4B2D19" title="Cacao"></span><span style="--swatch:#F1E9DB" title="Crema"></span><span style="--swatch:#FF8800" title="Naranja"></span><span style="--swatch:#FFD700" title="Dorado"></span></div><p class="swatch-label">Cacao · crema · naranja · dorado</p><div class="secondary-swatches" aria-label="Acentos secundarios"><span style="--swatch:#C7EED4" title="Menta"></span><span style="--swatch:#A8DADC" title="Azul glaciar"></span><small>Acentos secundarios</small></div></div>
-    </section>
-
-    <section class="slide legal-slide" id="slide-4" aria-labelledby="title-4" aria-roledescription="diapositiva" data-slide="4" aria-hidden="true" inert>
-      <header class="slide-heading"><p class="eyebrow">03 / Reglas del juego</p><h2 id="title-4">Marco legal<br><em>en contexto.</em></h2></header>
-      <div class="legal-layout"><div class="legal-list">
-        <article><b><a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=12672" target="_blank" rel="noreferrer">Ley 590 · 2000 ↗</a></b><span>Marco para promover las Mipymes. Referencia de fomento empresarial.</span></article>
-        <article><b>Ley 36 · confirmar año</b><span><a href="https://www.corteconstitucional.gov.co/relatoria/2009/c-324-09.htm" target="_blank" rel="noreferrer">1981 ↗</a>: bienestar de Fuerzas Militares y Policía. <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=66145" target="_blank" rel="noreferrer">1984 ↗</a>: profesión artesanal. Confirmar cuál asignaron; ninguna se presume aplicable.</span></article>
-        <article><b><a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=160966" target="_blank" rel="noreferrer">Ley 2069 · 2020 ↗</a></b><span>Impulsa el emprendimiento y el crecimiento empresarial.</span></article>
-        <article><b><a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=44306" target="_blank" rel="noreferrer">Ley 1480 · 2011 ↗</a></b><span>Protege a consumidores: información clara, seguridad y calidad.</span></article>
-        <article class="law-update"><b><a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1177" target="_blank" rel="noreferrer">Ley 9 · 1979 ↗</a></b><span>Código Sanitario Nacional. La <a href="https://www.bogotajuridica.gov.co/sisjur/normas/Norma1.jsp?dt=S&amp;i=193810" target="_blank" rel="noreferrer">Ley 2603 de 2026 ↗</a> derogó el art. 151; no la Ley 9 completa.</span></article>
-      </div><aside class="legal-callout"><span class="callout-kicker">Por ser alimento para perros</span><strong>Revisar la regulación del ICA</strong><p>La Resolución 61252 de 2020 establece requisitos para fabricantes y alimentos para animales. Confirmar con ICA la categoría y los registros aplicables antes de comercializar.</p><a href="https://www.ica.gov.co/normatividad/normas-ica/resoluciones-oficinas-nacionales/2020/2020r61252" target="_blank" rel="noreferrer">Consultar ICA ↗</a><small>Resumen educativo. Validar vigencia y aplicación según el producto y la actividad.</small></aside></div>
-    </section>
-
-    <section class="slide smart-slide" id="slide-5" aria-labelledby="title-5" aria-roledescription="diapositiva" data-slide="5" aria-hidden="true" inert>
-      <div class="smart-top"><p class="eyebrow">04 / Meta de feria</p><h2 id="title-5">Un objetivo<br><em>medible.</em></h2><p class="smart-statement">Vender <strong>25 paletas</strong> durante la feria empresarial y registrar cada venta con su sabor y canal.</p><p class="proposal-tag">META BASADA EN LAS VENTAS REGISTRADAS</p></div>
-      <div class="smart-steps"><article><b>S</b><strong>Qué</strong><span>Paletas COOL ANIMAL</span></article><article><b>M</b><strong>Cuánto</strong><span>25 unidades</span></article><article><b>A</b><strong>Cómo</strong><span>Combo, muestra permitida y QR</span></article><article><b>R</b><strong>Para qué</strong><span>Validar interés y ventas</span></article><article><b>T</b><strong>Cuándo</strong><span>Durante la feria</span></article></div>
-      <p class="smart-foot">Estrategia: exhibir ambos sabores, ofrecer el pack x4 y registrar unidades, ingresos y consultas.</p>
-    </section>
-
-    <section class="slide market-slide" id="slide-6" aria-labelledby="title-6" aria-roledescription="diapositiva" data-slide="6" aria-hidden="true" inert>
-      <header class="slide-heading"><p class="eyebrow">05 / A quién servimos</p><h2 id="title-6">El mercado<br><em>que queremos conocer.</em></h2></header>
-      <div class="market-layout"><div class="market-map"><div class="map-ring ring-a"></div><div class="map-ring ring-b"></div><div class="map-center"><img src="../assets/cool-animal-mark.png" alt=""><span>COOL<br>ANIMAL</span></div><span class="map-point p-one">01</span><span class="map-point p-two">02</span><span class="map-point p-three">03</span></div><div class="segments"><article><span>GEOGRÁFICA</span><p>Facatativá y entorno del Gimnasio Cervantes. Priorizar familias y visitantes del sector.</p></article><article><span>DEMOGRÁFICA</span><p>Personas responsables del cuidado de perros, de distintas edades.</p></article><article><span>PSICOGRÁFICA</span><p>Quienes valoran el bienestar, los ingredientes claros y los negocios locales.</p></article><article><span>CONDUCTUAL</span><p>Compradores de premios y snacks; interés, sabor preferido y recompra por validar.</p></article><small>Segmentación inicial como hipótesis; la feria permitirá recoger respuestas reales.</small></div><figure class="image-slot slot-market" data-image-slot="mercado"><div class="slot-empty"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="22" rx="3"/><circle cx="12" cy="13" r="2.5"/><path d="m6 24 7-7 5 5 3-3 5 5"/></svg><span>Imagen 02</span></div><figcaption>Familias y mascotas de la zona</figcaption></figure></div>
-    </section>
-
-    <section class="slide competition-slide" id="slide-7" aria-labelledby="title-7" aria-roledescription="diapositiva" data-slide="7" aria-hidden="true" inert>
-      <header class="slide-heading"><p class="eyebrow">06 / Alternativas del cliente</p><h2 id="title-7">¿Qué otras opciones<br><em>encuentra?</em></h2></header>
-      <div class="table-wrap"><table><thead><tr><th>Alternativa</th><th>Tipo</th><th>Fortaleza percibida</th><th>Espacio para COOL ANIMAL</th></tr></thead><tbody><tr><th>Snacks comerciales para perros</th><td>Directa</td><td>Fácil de conseguir y comparar</td><td>Formato frío y sabores de fruta</td></tr><tr><th>Helados artesanales para mascotas</th><td>Directa</td><td>Ocasión de premio similar</td><td>Identidad de patita y venta cercana</td></tr><tr><th>Premios secos o galletas</th><td>Indirecta</td><td>Prácticos para llevar</td><td>Experiencia refrescante para compartir</td></tr><tr><th>Preparación casera</th><td>Indirecta</td><td>Control de ingredientes</td><td>Opción lista para servir</td></tr></tbody></table></div>
-      <div class="comp-footer"><p>Comparación por categorías; validar marcas, precios y disponibilidad en el área de la feria.</p><span>OBSERVACIÓN PENDIENTE</span></div>
-    </section>
-
-    <section class="slide operations-slide" id="slide-8" aria-labelledby="title-8" aria-roledescription="diapositiva" data-slide="8" aria-hidden="true" inert>
-      <header class="slide-heading"><p class="eyebrow">07 / De la compra a la feria</p><h2 id="title-8">Operar con<br><em>cuidado.</em></h2></header>
-      <div class="operations-layout"><ol class="flow"><li><span class="flow-number">01</span><div><b>Elegir</b><p>Fruta, yogur y empaques de proveedores locales por confirmar.</p></div></li><li><span class="flow-number">02</span><div><b>Revisar</b><p>Calidad, fecha, recibo de compra y condiciones de conservación.</p></div></li><li><span class="flow-number">03</span><div><b>Preparar</b><p>Higiene, porciones y congelación según el proceso definido.</p></div></li><li><span class="flow-number">04</span><div><b>Transportar</b><p>Conservar la cadena de frío hasta el puesto de feria.</p></div></li></ol><aside class="contingency"><span class="contingency-label">Si algo cambia</span><h3>Plan de contingencia</h3><ul><li><b>Falla de frío</b><span>Detener ventas del lote y conservarlo en nevera auxiliar.</span></li><li><b>Proveedor sin stock</b><span>Usar proveedor alterno aprobado o ajustar el inventario.</span></li><li><b>Alta demanda</b><span>Comunicar agotados y tomar pedidos solo con entrega acordada.</span></li></ul><p>Proveedores y capacidad: completar con datos confirmados.</p></aside></div>
-    </section>
-
-    <section class="slide finance-slide" id="slide-9" aria-labelledby="title-9" aria-roledescription="diapositiva" data-slide="9" aria-hidden="true" inert>
-      <div class="finance-head"><p class="eyebrow">08 / Resultados registrados</p><h2 id="title-9">25 de 30<br><em>se vendieron.</em></h2><div class="price-lockup"><span>Precio por paleta</span><strong>$3.500</strong><small>COP</small></div><p class="pack-price">Pack x4: <b>$13.000 COP</b></p><div class="finance-results" aria-label="Resumen de resultados"><div><span>Ingresos</span><strong>$87.500</strong></div><div><span>Costos directos</span><strong>$32.573</strong></div><div><span>Antes de CIF</span><strong>$54.927</strong></div></div><p class="finance-footnote">5 paletas se derritieron. No incluye CIF ni gastos no registrados.</p></div>
-      <div class="cost-side"><h3>Costos directos registrados</h3><div class="cost-line"><span>Fresas</span><i></i><b>$6.000</b></div><div class="cost-line"><span>Banano</span><i></i><b>$3.400</b></div><div class="cost-line"><span>Yogur</span><i></i><b>$17.450</b></div><div class="cost-line"><span>Agua</span><i></i><b>$693</b></div><div class="cost-line"><span>Etiquetas</span><i></i><b>$5.000</b></div><div class="cost-line"><span>Bolsas</span><i></i><b>$30</b></div><div class="cost-total"><span>Total de costos registrados</span><strong>$32.573</strong></div><div class="margin-formula"><span>Margen directo antes de CIF y otros gastos</span><strong>62,8 %</strong><small>($87.500 − $32.573) ÷ $87.500</small></div><p>Resultado de la prueba de 25 ventas; verificar costos indirectos y confirmar la unidad de bolsas.</p></div>
-    </section>
-
-    <section class="slide marketing-slide" id="slide-10" aria-labelledby="title-10" aria-roledescription="diapositiva" data-slide="10" aria-hidden="true" inert>
-      <header class="slide-heading"><p class="eyebrow">09 / Que nos encuentren</p><h2 id="title-10">De la feria<br><em>al próximo pedido.</em></h2></header>
-      <div class="marketing-layout"><div class="channel-list"><article><span class="channel-icon instagram" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="18" cy="6" r="1"/></svg></span><div><b>Instagram</b><p>Fotos de sabores, preparación y novedades; enlazar el perfil oficial.</p></div><small data-instagram-label>Cuenta por crear</small></article><article><span class="channel-icon whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z"/><path d="M9 8.4c.3-.5.6-.5.9-.1l.9 1.4c.2.3.1.5-.2.8l-.5.5c.6 1.2 1.5 2 2.7 2.6l.5-.6c.2-.3.5-.3.8-.1l1.3.8c.4.2.4.6.1 1-.4.6-1 .9-1.7.8-2.2-.4-5.2-3.3-5.5-5.5-.1-.6.2-1.2.7-1.6Z"/></svg></span><div><b>WhatsApp Business</b><p>Catálogo breve, respuestas rápidas y pedidos con sabor y cantidad.</p></div><a class="channel-action" data-whatsapp-link href="https://wa.me/573209843808" target="_blank" rel="noopener">320 984 3808</a></article><article><span class="channel-icon qr-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h3v3h-3zM19 14h2v2h-2zM18 19h3v2h-3zM14 19h2v2h-2z"/><path d="M5 5h3v3H5zM16 5h3v3h-3zM5 16h3v3H5z"/></svg></span><div><b>Códigos QR</b><p>Un código en el puesto para abrir el perfil o iniciar un pedido.</p></div><small>Escanea y continúa</small></article><article class="website-row"><span class="channel-icon website-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><div><b>Nuestra página web</b><p>Vista previa del catálogo y los productos COOL ANIMAL.</p></div><a class="website-button" data-website-link href="../index.html" target="_blank" rel="noopener">Ir a la página</a></article></div><div class="website-preview"><div class="preview-browser"><div class="preview-toolbar" aria-hidden="true"><span class="preview-dots"><i></i><i></i><i></i></span><span class="preview-address">cool animal · tienda</span><span class="preview-menu">•••</span></div><iframe data-website-preview src="../index.html#inicio" title="Vista previa de la tienda COOL ANIMAL" loading="eager" tabindex="-1"></iframe></div><p class="preview-caption">Vista previa de nuestra página web</p></div></div>
-    </section>
-
-    <section class="slide closing-slide" id="slide-11" aria-labelledby="title-11" aria-roledescription="diapositiva" data-slide="11" aria-hidden="true" inert>
-      <figure class="closing-photo"><img src="../assets/perrito-final-recortado.png" alt="Perrito de pelaje claro recortado sin fondo, emergiendo desde la parte inferior"></figure>
-      <div class="closing-copy-block"><div class="closing-mark"><img src="../assets/cool-animal-mark.png" alt=""></div><p class="eyebrow">COOL ANIMAL · FERIA EMPRESARIAL</p><h2 id="title-11">Gracias por<br><em>escuchar.</em></h2><p class="closing-copy">¿Preguntas para el equipo?</p><div class="closing-rule"></div></div><div class="paw-trail" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M14 21c-3 0-5-4-4-7s4-4 6-1 2 8-2 8Zm11-2c-3 1-6-2-6-6s3-5 5-3 4 7 1 9Zm11 0c-3 1-6-2-5-6s4-5 6-2 2 7-1 8ZM12 29c-1-3 1-5 4-6 3-2 7-2 10-1 4 1 8 4 8 8 0 4-4 6-8 5-3-1-5-1-8 0-4 1-7-2-6-6Z"/></svg><svg viewBox="0 0 48 48"><path d="M14 21c-3 0-5-4-4-7s4-4 6-1 2 8-2 8Zm11-2c-3 1-6-2-6-6s3-5 5-3 4 7 1 9Zm11 0c-3 1-6-2-5-6s4-5 6-2 2 7-1 8ZM12 29c-1-3 1-5 4-6 3-2 7-2 10-1 4 1 8 4 8 8 0 4-4 6-8 5-3-1-5-1-8 0-4 1-7-2-6-6Z"/></svg><svg viewBox="0 0 48 48"><path d="M14 21c-3 0-5-4-4-7s4-4 6-1 2 8-2 8Zm11-2c-3 1-6-2-6-6s3-5 5-3 4 7 1 9Zm11 0c-3 1-6-2-5-6s4-5 6-2 2 7-1 8ZM12 29c-1-3 1-5 4-6 3-2 7-2 10-1 4 1 8 4 8 8 0 4-4 6-8 5-3-1-5-1-8 0-4 1-7-2-6-6Z"/></svg><svg viewBox="0 0 48 48"><path d="M14 21c-3 0-5-4-4-7s4-4 6-1 2 8-2 8Zm11-2c-3 1-6-2-6-6s3-5 5-3 4 7 1 9Zm11 0c-3 1-6-2-5-6s4-5 6-2 2 7-1 8ZM12 29c-1-3 1-5 4-6 3-2 7-2 10-1 4 1 8 4 8 8 0 4-4 6-8 5-3-1-5-1-8 0-4 1-7-2-6-6Z"/></svg></div>
-    </section>
-
-    <footer class="deck-controls" aria-label="Controles de diapositivas">
-      <div class="progress-track" role="progressbar" aria-label="Progreso de la presentación" aria-valuemin="1" aria-valuemax="11" aria-valuenow="1"><span data-progress></span></div>
-      <div class="control-row"><div class="slide-counter"><span data-current>01</span><i>/</i><span>11</span></div><span class="key-hint">Navega con las flechas</span><div class="control-buttons"><button type="button" data-prev aria-label="Diapositiva anterior" title="Anterior (flecha izquierda)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button type="button" data-next aria-label="Siguiente diapositiva" title="Siguiente (flecha derecha)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div></div>
-    </footer>
-    <p class="sr-only" aria-live="polite" data-announcer></p>
   </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio" aria-label="Cool Animal, inicio">
+      <img class="brand-lockup" src="assets/cool-animal-mark.png" alt="Símbolo de cabeza de perro de COOL ANIMAL">
+    </a>
+    <p>Refresca, consiente, comparte.</p>
+    <nav aria-label="Enlaces del pie">
+      <a href="#productos">Sabores</a>
+      <a href="#ingredientes">Ingredientes</a>
+      <a href="#destaca">Lo especial</a>
+      <a href="#comparativa">Comparativa</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#pedidos">Pedir</a>
+    </nav>
+    <small>© <span data-year></span> COOL ANIMAL. Todos los derechos reservados</small>
+  </footer>
+
+  <!-- FLOATING QUICK WHATSAPP BUTTON -->
+  <a class="floating-wa" href="#pedidos" data-floating-wa aria-label="Pedir por WhatsApp">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.06-1.07l-.29-.17-3.02.79.81-2.94-.19-.3a8.17 8.17 0 0 1-1.25-4.35c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8 1-.15.19-.3.21-.55.08-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.2 1.15.17 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.31"/>
+    </svg>
+    <span class="wa-label">WhatsApp</span>
+  </a>
+
+  <!-- CART SIDE PANEL & CHECKOUT -->
+  <div class="cart-backdrop" data-cart-backdrop hidden></div>
+  <aside class="cart-panel" data-cart-panel aria-hidden="true" aria-label="Tu pedido">
+    <div class="cart-head">
+      <div>
+        <h2>Tu pedido<span class="cart-head-count" data-cart-count>0</span></h2>
+      </div>
+      <button class="icon-button" data-close-cart aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-body">
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-empty" data-cart-empty>
+        <h3>Tu carrito está vacío.</h3>
+        <p>Agrega una paleta para comenzar.</p>
+        <button class="text-link" data-close-cart>Ver sabores</button>
+      </div>
+    </div>
+    <form class="checkout" data-checkout>
+      <div class="checkout-row">
+        <span>Subtotal</span>
+        <strong data-subtotal>$0</strong>
+      </div>
+      <label class="delivery-label" for="delivery-fee">
+        <span>Domicilio</span>
+        <span class="fee-input-wrap">
+          <span>$</span>
+          <input id="delivery-fee" data-delivery-fee type="number" min="0" step="500" inputmode="numeric" placeholder="Por confirmar" aria-describedby="fee-help">
+        </span>
+      </label>
+      <small id="fee-help" class="fee-help">Configura el valor en config.js o ingrésalo para calcular el total.</small>
+      <div class="checkout-total">
+        <span>Total</span>
+        <strong data-total>$0</strong>
+      </div>
+      <div class="checkout-fields">
+        <h3>Lugar de entrega</h3>
+        <label>Nombre<input name="name" autocomplete="name" required placeholder="Tu nombre"></label>
+        <div class="field-split">
+          <label>Teléfono<input name="phone" type="tel" autocomplete="tel" required placeholder="Número de celular"></label>
+          <label>Ciudad<input name="city" autocomplete="address-level2" required placeholder="Ciudad"></label>
+        </div>
+        <label>Dirección<input name="address" autocomplete="street-address" required placeholder="Dirección completa"></label>
+        <label>Barrio<input name="neighborhood" required placeholder="Barrio"></label>
+        <label>Indicaciones <span class="optional">(opcional)</span><input name="reference" placeholder="Casa, apartamento, torre..."></label>
+        <label>Método de pago<select name="payment" required></select></label>
+      </div>
+      <button class="button button-dark checkout-submit" type="submit">Continuar por WhatsApp</button>
+      <button class="copy-order" type="button" data-copy-order>Copiar mensaje del pedido</button>
+      <p class="checkout-note" data-checkout-note>El pedido se confirmará directamente por WhatsApp.</p>
+    </form>
+  </aside>
+
+  <!-- TOAST -->
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+  <noscript>Esta tienda necesita JavaScript para calcular tu pedido.</noscript>
 </body>
 </html>
