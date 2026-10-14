@@ -1,24 +1,22 @@
-# COOL ANIMAL
+# Presentación de COOL ANIMAL
 
-Sitio de tienda estático, mobile-first, hecho con HTML, CSS y JavaScript sin frameworks.
+Abre `index.html` en el navegador. Es una presentación de 11 diapositivas, hecha en HTML, CSS y JavaScript sin framework ni paso de compilación.
 
-## Publicar
+## Navegación y exportación
 
-Publica esta carpeta completa en cualquier hosting estático (por ejemplo, GitHub Pages, Netlify o un servidor web). Abre `index.html` para previsualizar. No requiere compilación ni dependencias.
+- Usa las flechas, `Page Up` / `Page Down`, `Inicio` / `Fin`, los controles de pantalla o desliza en un teléfono.
+- Usa Imprimir del navegador y elige Guardar como PDF para exportar las once diapositivas.
 
-## Configuración antes de publicar
+## Antes de presentarla
 
-Edita `config.js` con los datos confirmados del negocio:
+- La portada ya incluye a Nicolás Valencia y Yojhan Cubillos, grado 11, Gimnasio Cervantes y Facatativá. No se incluyeron tutor ni fecha.
+- La meta SMART de feria es vender 25 paletas, basada en las 25 ventas registradas.
+- La diapositiva financiera resume ingresos de $87.500, costos directos registrados de $32.573 y $54.927 antes de CIF. El margen directo mostrado (62,8 %) excluye CIF y otros gastos no anotados; las bolsas figuran por $30 y su unidad debe confirmarse.
+- El precio individual de $3.500 COP y el pack x4 de $13.000 COP proceden del catálogo actual.
+- `whatsappNumber` ya está configurado en `../config.js`. Instagram y `websiteUrl` siguen vacíos hasta confirmar la cuenta y la otra URL. El botón abre la tienda de este proyecto mientras tanto; la vista previa está integrada en la diapositiva.
+- Los competidores aparecen por categorías y los proveedores locales quedan por confirmar. La Ley 36 requiere el año correcto para identificar cuál les asignaron.
+- Confirma la categoría y los requisitos aplicables al producto para perros con el ICA antes de comercializarlo. La diapositiva legal es una síntesis educativa, no asesoría jurídica.
 
-- `whatsappNumber`: número internacional solo con dígitos, por ejemplo el prefijo de país seguido del número.
-- `instagramUsername`: usuario sin `@`.
-- `deliveryFee`: domicilio en COP. Si se deja en `null`, el cliente puede escribir el valor confirmado en el carrito; sin ese dato el total queda “Por confirmar”.
-- `paymentMethods`: opciones visibles en checkout. No incluir datos o cuentas de pago que no hayan sido confirmados.
+La presentación empieza con una pantalla de bienvenida: pulsa «Toca para iniciar» o actívala con el teclado. El fondo combina el logo y la huella en una secuencia alternada, con movimiento y un desenfoque leve. Las animaciones de fondo se desactivan con la preferencia del sistema para reducir movimiento.
 
-No se han configurado números, usuarios ni tarifas ficticios. El pedido se abre en WhatsApp cuando se proporciona un número; si no, el sitio genera el mensaje y permite copiarlo.
-
-## Reemplazar visuales
-
-El logotipo oficial provisto está en `assets/cool-animal-logo.png`; se usa sin recolorear. El hero utiliza `assets/cool-animal-product-mockup.png`, un mockup visual del proyecto, no una fotografía del producto final. Las ilustraciones de producto en `assets/paleta-fresa.svg` y `assets/paleta-banano.svg` son temporales. Las imágenes ilustradas de perros y fruta se muestran desde `assets/placeholder-dog.svg` y `assets/placeholder-fruit.svg`. Reemplaza los visuales temporales por fotografía cuando esté disponible, conservando las referencias o actualizándolas en `index.html` y `styles.css`.
-
-Los precios y descripciones del catálogo se encuentran en `app.js`.
+Queda un espacio para una foto de mercado en la diapositiva 6. La foto final usa un recorte transparente del perrito suministrado.
